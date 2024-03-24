@@ -1,0 +1,20 @@
+ENVI
+description = {
+/Volumes/Dati/pythonTest/arosics/arosics/tests/coastsat/test/2018-01-08-09-59-50_S2_CAUCANA-CASUZZE_swir__shifted_to__2018-01-03-09-57-00_S2_CAUCANA-CASUZZE_swir.bsq}
+samples = 360
+lines   = 180
+bands   = 1
+header offset = 0
+file type = ENVI Standard
+data type = 12
+interleave = bsq
+byte order = 0
+map info = {UTM, 1, 1, 456060, 4071840, 10, 10, 33, North,WGS-84}
+coordinate system string = {PROJCS["WGS_1984_UTM_Zone_33N",GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",500000.0],PARAMETER["False_Northing",0.0],PARAMETER["Central_Meridian",15.0],PARAMETER["Scale_Factor",0.9996],PARAMETER["Latitude_Of_Origin",0.0],UNIT["Meter",1.0]]}
+band names = {
+B1}
+data ignore value = 0
+AREA OR POINT = Area
+TIFFTAG RESOLUTIONUNIT = 1 (unitless)
+TIFFTAG XRESOLUTION = 1
+TIFFTAG YRESOLUTION = 1
