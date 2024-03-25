@@ -1,3 +1,42 @@
+
+==================================================================================================
+Personal Fork of the AROSICS package for subpixel image registration
+==================================================================================================
+
+simple changes to make it work with python 3.8 and above
+---
+NOTE: This is a personal fork of the AROSICS package, the original package can be found at https://git.gfz-potsdam.de/danschef/arosics
+Installation note: I've install using pip package manager, I found a issue if try to install packages dependencies in a other order than listed in documentation file. 
+In particular It is necessary install GDAL before NumPy; in case to use in a customized environment it is necessary re-install GDAL using no-build-isolation and no-cache-dir options.
+
+.. code-block:: python
+
+        pip uninstall gdal
+
+        # ensure numpy is installed prior to installing gdal
+        pip install numpy
+
+        # ensure setuptools and wheel are installed to do the build in your current environment
+        pip install -U setuptools wheel
+
+        # install gdal
+        pip install --no-build-isolation --no-cache-dir --force-reinstall gdal 
+
+I found this solution here: https://gis.stackexchange.com/a/465888/140483
+
+I send a `pull request <https://github.com/GFZ/arosics/pull/37>`_ for this.
+
+------------------------
+
+Also I done a test with Sentinel-2 images
+
+`test.ipnb <tests/coastsat/test.ipynb>`_
+
+
+
+------------------------
+
+
 .. figure:: https://danschef.git-pages.gfz-potsdam.de/arosics/images/arosics_logo.png
     :target: https://git.gfz-potsdam.de/danschef/arosics
     :align: center
